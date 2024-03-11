@@ -1,0 +1,103 @@
+.castSection{
+    position: relative;
+    margin-bottom: 50px;
+}
+.sectionHeading{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.listItems{
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+.listItem{
+    text-align: center;
+    color: #fff;
+}
+.profileImg{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.profileImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+.listItem .name{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.listItem .charecter{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    opacity: .5;
+}
+/**Skeleton structure**/
+.castSkeleton{
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+.skItem .circle{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.skItem .row{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.skItem .row2{
+    width: 75%;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .listItems{
+        margin: 0;
+        padding: 0;
+    }
+    .profileImg{
+        width: 175px;
+        height: 175px;
+        margin-bottom: 25px;
+    }
+    .listItem .name{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .listItem .charecter{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .castSection{
+        margin: 0;
+        padding: 0;
+    }
+    .skItem .circle{
+        width: 175px;
+        height: 175px;
+        margin-bottom: 25px;
+    }
+
+}

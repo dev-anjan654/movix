@@ -1,0 +1,17 @@
+.errorPage{
+    height: 700px;
+    padding-top: 200px;
+}
+.errorPage .contentWrapper{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.errorPage .contentWrapper .bigText{
+    font-size: 150px;
+    font-weight: 700;
+}
+.errorPage .contentWrapper .smallText{
+    font-size: 44px;
+}

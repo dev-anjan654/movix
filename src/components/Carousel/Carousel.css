@@ -1,0 +1,80 @@
+.carousel{
+    margin-bottom: 50px;
+    left: 0;
+    top: 50px;
+    width: 100%;
+}
+.carousel .content-wrapper{
+    position: relative;
+}
+.car-item{
+    width: 150px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    position: relative !important;
+}
+.car-item img{
+    width: 87%;
+    border-radius: 10px;
+}
+.car-info{
+    color: #fff;
+    text-align: center;
+}
+.car-info h4{
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    display: block;
+}
+.car-info .rel-date{
+    color: #a8a8a8;
+    font-weight: 400;
+}
+@media (max-width: 575px) {
+    .car-info .rel-date{
+        font-size: 14px;
+    }
+}
+.car-item .circle-rating{
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    width: 40px;
+}
+@media (max-width: 575px) {
+    .car-item .circle-rating{
+        width: 25px;
+        left: 10px;
+        bottom: 50px;
+    }
+}
+
+.loadingSkeleton{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+.skeletonItem{
+    width: 150px;
+    flex-shrink: 0;
+}
+.posterBlock{
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    margin-bottom: 30px;
+}
+
+.carousel .carousel-title{
+    margin-bottom: 20px;
+}

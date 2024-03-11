@@ -1,0 +1,67 @@
+.movieCard{
+    width: calc(50% - 5px);
+    margin-bottom: 25px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.posterBlock{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all ease .5s;
+}
+.posterBlock .lazy-load-image-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.posterBlock .lazy-load-image-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.textBlock{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.textBlock .title{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.textBlock .date{
+    font-size: 14px;
+    opacity: 0.5;
+}
+.movieCard:hover .posterBlock{
+    opacity: 0.5;
+}
+
+
+@media (min-width: 576px) {
+    .movieCard{
+        width: calc(25% - 15px);
+    }
+    .textBlock .title{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .movieCard{
+        width: calc(20% - 16px);
+    }
+}

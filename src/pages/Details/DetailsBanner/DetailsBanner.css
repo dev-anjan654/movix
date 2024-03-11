@@ -1,0 +1,221 @@
+.detailsBanner {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.detailsBanner .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    overflow: hidden;
+}
+.lazy-load-image-background {
+    width: 100%;
+    height: 100%;
+}
+.lazy-load-image-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.detailsBanner .opacity-layer {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(
+        180deg,
+        rgba(4, 21, 45, 0) 0%,
+        #04152d 79.17%
+    );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+}
+.left {
+    flex-shrink: 0;
+}
+.posterImg {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+.right {
+    color: white;
+}
+.title {
+    font-size: 28px;
+    line-height: 40px;
+}
+.subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.5;
+}
+.overview {
+    margin-bottom: 25px;
+}
+.heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.description {
+    line-height: 24px;
+}
+.circle-rating {
+    max-width: 60px;
+    background-color: var(--black2);
+}
+.CircularProgressbar-text {
+    fill: white;
+}
+.playbtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.playbtn svg{
+    width: 60px;
+}
+.playbtn .text {
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+.playbtn .text:hover{
+    color: var(--pink);
+}
+.triangle {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white;
+    transform: translateY(0);
+    transition: all 0.7s ease-in-out;
+}
+.playbtn svg:hover .triangle{
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: var(--pink);
+    animation: trailorPlay 0.7s ease-in-out;
+}
+.circle {
+    stroke: white;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 1300;
+    transition: all 0.5s ease-in-out;
+}
+.playbtn svg:hover .circle{
+    stroke-dashoffset: 0;
+    stroke: var(--pink);
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.info {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    display: flex;
+}
+.infoItem {
+    margin-right: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.infoItem .text {
+    margin-right: 10px;
+    opacity: 0.5;
+    line-height: 24px;
+}
+.infoItem .text.bold{
+    font-weight: 600;
+    opacity: 1;
+}
+.detailsBannerSkeleton {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+}
+.detailsBannerSkeleton .contentWrapper {
+    display: flex;
+    gap: 50px;
+}
+.detailsBannerSkeleton .contentWrapper .left {
+    flex-shrink: 0;
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    aspect-ratio: 1/1.5;
+}
+.detailsBannerSkeleton .contentWrapper .right{
+    width: 100%;
+}
+.detailsBannerSkeleton .contentWrapper .right .row {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.detailsBannerSkeleton .contentWrapper .right .row:nth-child(2){
+    width: 75%;
+    margin-bottom: 50px;
+}
+.detailsBannerSkeleton .contentWrapper .right .row:nth-child(5) {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+
+@media (min-width:576px) {
+    .detailsBanner{
+        margin-bottom: 0;
+        padding-top: 120px;
+        min-height: 700px;
+    }
+    .content{
+        gap: 50px;
+        flex-direction: row;
+    }
+    .posterImg{
+        max-width: 350px;
+    }
+    .title{
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .subtitle{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .description{
+        padding-right: 100px;
+    }
+    .circle-rating{
+        max-width: 90px;
+    }
+    .playbtn svg{
+        width: 80px;
+    }
+    .detailsBannerSkeleton{
+        gap: 50px;
+        flex-direction: row;
+    }
+    .detailsBannerSkeleton .contentWrapper .left{
+        max-width: 350px;
+    }
+}

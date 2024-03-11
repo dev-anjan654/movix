@@ -1,0 +1,105 @@
+.explorePage{
+    min-height: 700px;
+    padding-top: 100px;
+}
+.explorePage .resultNotFound{
+    font-size: 24px;
+    color: #fff;
+}
+.explorePage .pageHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+.explorePage .pageTitle{
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.explorePage .filters{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.filters .react-select-container.genresDD{
+    width: 100%;
+}
+.filters .react-select-container.sortbyDD{
+    width: 100%;
+    flex-shrink: 0;
+}
+.react-select__control{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background-color: var(--black-light);
+    border-radius: 20px;
+}
+.react-select__control .react-select__value-container .react-select__placeholder, .react-select__input-container{
+    color: #fff;
+    margin: 0 10px;
+}
+.react-select__single-value{
+    color: #fff;
+}
+.react-select__multi-value{
+    color: var(--black3);
+    border-radius: 10px;
+}
+.react-select__multi-value .react-select__multi-value__label{
+    color: #fff;
+}
+.react-select__multi-value .react-select__multi-value__remove{
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.react-select__multi-value .react-select__multi-value__remove:hover{
+    color: var(--black-lighter);
+}
+.react-select-container .react-select__menu{
+    top: 40px;
+    margin: 0;
+    padding: 0;
+}
+.explorePage .content{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.content .movieCard .posterBlock{
+    margin-bottom: 30px;
+}
+.loadingScreen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media (min-width: 576px) {
+    .explorePage .pageHeader{
+        flex-direction: row;
+    }
+    .explorePage .pageTitle{
+        margin-bottom: 0;
+    }
+    .explorePage .filters{
+        flex-direction: row;
+    }
+    .filters .react-select-container.genresDD{
+        max-width: 500px;
+        min-width: 250px;
+    }
+    .filters .react-select-container.sortbyDD{
+        width: 250px;
+    }
+    .content{
+        gap: 20px;
+    }
+}
